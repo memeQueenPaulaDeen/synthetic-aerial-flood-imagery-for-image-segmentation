@@ -20,11 +20,11 @@ The data is organized into three folders x, y, and y_clean. For most application
 
 In some cases, the masks produced by unity blend RGB values near the borders of different classifications. The y_clean folder provides masks where a post-process script assigns blended values to the nearest valid neighbor. 
 
-Scripts to load and clean the data can be found,
-additionally example Keras loaders can be found 
+Scripts to load and clean the data can be found [here](https://github.com/memeQueenPaulaDeen/DeepLearnFinalProject/blob/master/DataCleaning.py),
+additionally example Keras loaders can be found [here](https://github.com/memeQueenPaulaDeen/DeepLearnFinalProject/blob/master/Generators.py)
 
 
 
 It is important to note that images taken over the same city will have overlapping portions. [Displacement between images is around 137 pixels but depends on terrain.]  It is recommended that data is split by city during training. For example, place Tulsa and Tokyo training, Akita in testing, do not place the first 300 images of each in training and the last 100 in testing. This will avoid contamination of test and validation sets.
 
-Code used to train DeepLabV3+ and VGG models can be found at the related repository 
+Code used to train DeepLabV3+ and VGG models using this dataset can be found at the related repository [here](https://github.com/memeQueenPaulaDeen/DeepLearnFinalProject)
